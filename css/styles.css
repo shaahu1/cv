@@ -1,0 +1,701 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Ubuntu+Condensed&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 10px #000; 
+}
+ 
+
+::-webkit-scrollbar-thumb {
+  background: #34EE91;
+}
+
+
+body
+{
+	background-image: url(../img/dark141.jpg); 
+	background-repeat: no-repeat;
+	background-attachment: initial;
+	background-color: #515151;
+}
+
+.menuicon
+{
+	margin-top: -300px;
+	margin-left: 45%;
+	padding-top: 0px;
+	align-content:  center;
+	position: fixed;
+	border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 40px solid #34EE91aa;
+
+}
+.step1
+{
+  	z-index: 2;
+}
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+.closebtn:hover
+{
+	color: #f00;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+
+
+.linkname:hover
+{
+	color: #fff;
+}
+
+
+.menubar
+{
+	width: 47px;
+	height: 4px;
+	margin-bottom: 5px;
+	background-color: #34EE91;
+	margin-top: -30px;
+}
+.menubar2
+{
+	width: 32px;
+	height: 4px;
+	margin-bottom: 5px;
+	background-color: #34EE91;
+	margin-top: 0px;
+	margin-left: 7px;
+}
+.menubar3
+{
+	width: 20px;
+	height: 4px;
+	background-color: #34EE91;
+	margin-top: 0px;
+	margin-left: 12.5px;
+}
+
+.dropdown
+{
+	z-index: 3;
+}
+
+
+#head
+{
+	width: 800px;
+	height: 100px;
+	margin-left: 5%;
+	margin-top: 300px;
+	
+}
+#name
+{
+	color: #fff;
+	font-family: 'Rubik Mono One', sans-serif;
+	font-weight: 50px;
+
+  	position: relative;
+  	text-transform: uppercase;
+  	font-size: 40px;
+  	letter-spacing: 4px;
+  	overflow: hidden;
+  	background: linear-gradient(90deg, #fff, #fff, #fff);
+  	background-repeat: no-repeat;
+  	background-size: 80%;
+  	animation: animate 2s;
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    margin-left: -850px;
+  }
+
+}
+
+#i
+{
+	float: right;
+
+}
+.my4to
+{
+	float: right;
+	width: 450px;
+	height: 450px;
+	background-color: #555;
+	float: right;
+	margin-right: 150px;
+	margin-top: -500px;
+	border-radius: 650px;
+	overflow: hidden;
+}
+.my4to img
+{
+	 transform-origin: 60% 0%;
+  transition: transform .25s, visibility .25s ease-in;
+}
+.my4to img:hover
+{
+	transform: scale(2);
+}
+
+
+#navbar-box
+{
+	
+	padding-left: 70px;
+	margin-left: 25px;
+	padding-top: 15px;
+	width: 70%;
+	height: 50px;
+	overflow: hidden;
+}
+
+#navbar
+{
+	color: #34EE91;
+	font-size: 25px;
+	font-family: 'Ubuntu Condensed', sans-serif;
+}
+#navbar a
+{
+	text-decoration: none;
+	color: #34EE91;
+
+}
+
+.headerall
+{
+	font-size: 40px;
+	color: #34EE91;
+	font-family: 'Cantarell', sans-serif;
+	letter-spacing: 7px;
+	text-decoration: underline;
+}
+
+
+
+@keyframes animate1 {
+  0% {
+    margin-left: -850px;
+  }
+
+}
+
+/* info */
+
+.info
+{
+	background-color: #000c;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	width: 100%;
+}
+.box0
+{
+	box-shadow: 1px 1px 4px #0008, 7px 7px #0006, 14px 14px #0004, 21px 21px #0002;
+}
+#myinfo
+{
+	margin-left: 2%;
+}
+#info-tag
+{
+	margin-left: 14%;
+	font-size: 22px;
+	color: #fff;
+}
+#fc
+{
+	color: #34EE91;
+}
+.row
+{	
+	display: flex;
+	align-items: center;
+}
+#aboutme
+{
+	color: #fff7;
+	font-size: 23px;
+}
+
+
+/* edu */
+#education
+{
+	width: 100%;
+}
+#box1
+{
+	margin-left: 15%;
+	color: #000;
+	width: 70%;
+}
+#box1 span
+{
+	font-size: 22px;
+	color: #34EE91;
+}
+#box1 h3
+{
+	font-size: 18px;
+}
+#box1 img
+{
+}
+
+#box2
+{
+	margin-right: 15%;
+	float: right;
+	color: #000;
+	width: 70%;
+}
+#box2 img
+{
+
+}
+#box2 span
+{
+	font-size: 25px;
+	color: #34EE91;
+	float: right;
+
+}
+#box2 h3
+{
+	font-size: 18px;
+	float: right;
+	text-align: right;
+
+}
+
+.b2img
+{
+	float: right;
+}
+
+/* skills */
+
+#skills
+{
+	background-image: linear-gradient(#00000001,#000c,#000c,#000c, #000c, #000d, #000d , #000d);
+}
+#skills-body
+{
+	margin-left: 5%;
+}
+.list
+{
+	list-style: none;
+	color: #fff;
+	font-size: 18px;
+}
+.progresbar
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 250px;
+	height: 10px;
+	background-color: #fff;
+}
+.fill
+{
+	height: 100%;
+	background-color: #34EE91;
+}
+
+
+/* project */
+.proj-box
+{
+	background-color: #149F5A22;
+}
+#proj-tital
+{
+	font-size: 22px;
+	color: #fff;
+	margin-left: 5%;
+}
+.proj-img
+{
+	overflow: hidden;
+}
+.proj-img img:hover
+{
+	cursor: pointer;
+	transform: scale(1.5) rotate(-25deg);
+}
+.proj-disc
+{
+	margin-left: 15%;
+	margin-right: 13%;
+	margin-top: 10%;
+	color: #fff;
+	font-size: 18px;
+}
+.btn-view
+{
+	width: 100px;
+	height: 30px;
+	font-size: 13px;
+	margin-right: 13%;
+	border-color: #fff;
+	color: #fff;
+	background-color: #0005;
+}
+.btn-view:hover
+{
+	
+	border-color: #34EE91;
+	color: #34EE91;
+}
+
+
+/* contact */
+
+
+#contact
+{
+	background-color: #fff1;
+	font-family: 'Ubuntu Condensed', sans-serif;
+}
+#cotact-address , #cotact-email , #cotact-no
+{
+	color: #fff;
+	font-size: 20px;
+}
+#contact-links
+{
+	width: 60%;
+	height: 80px;
+	background-color: #34EE91;
+	display: block;
+	align-items: center;
+}
+#contact-links img
+{
+	margin-left: 20%;
+}
+
+
+
+
+
+
+.col
+{
+	align-items: center;
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 902px) and (max-width: 1199px) 
+{
+
+.my4to
+{
+	width: 400px;
+	height: 400px;
+	margin-right: 5%;
+
+}
+#name
+{
+	font-size: 35px;
+}
+.aaa
+{
+	margin-left: 17%;
+}
+
+
+}
+
+
+
+@media only screen and (min-width: 650px) and (max-width: 901px) 
+{
+
+.my4to
+{
+	width: 350px;
+	height: 350px;
+	margin-right: 10%;
+
+}
+#name
+{
+	padding-top: 150px;
+	font-size: 35px;
+}
+#navbar-box
+{
+	width: 100%;
+	margin-left: -50px;
+	margin-top: 50px;
+}
+
+}
+
+@media only screen and (max-width: 650px)
+{
+.my4to
+{
+	width: 300px;
+	height: 300px;
+	border-radius: 0px;
+	
+
+}
+.my4to img
+{
+	width: 300px;
+	height: 300px;
+	margin-left: 40%;
+	border-radius: 0px;
+}
+#name
+{
+	padding-top: 150px;
+	font-size: 30px;
+}
+#navbar-box
+{
+	display: none;
+}
+#img
+{
+	display: none;
+}
+#skills-body
+{
+	padding-left: 10%;
+}
+.btn-view
+{
+	margin-right: 8%;
+	
+}
+#contact-links img
+{
+	margin-left: 10%;
+}
+.aaa
+{
+	margin-left: -12%;
+}
+
+}
+
+
+
+.bs-example
+{
+	margin-left: 15%;
+}
+
+
+.card-img-overlay
+{
+	background-color: #000c;
+	margin-top: 151px;
+}
+
+.typing
+{
+	color: #34EE91;
+}
+.type
+{
+	color: #fff;
+	font-size: 25px;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	margin-left: 5%;
+}
+
+
+.popup1, .popup2, .popup3, .popup4
+{
+	width: 900px;
+	height: 550px;
+	background-image: linear-gradient(#fff, #999 , #555 , #000);
+	position: fixed;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.5s;
+	margin-top: 5%;
+}
+#popup1.active1, #popup2.active1, #popup3.active1, #popup4.active1
+{
+	visibility: visible;
+	opacity: 1;
+
+	transition: 0.5s;
+}
+
+#blur.active
+{
+	filter: blur(20px);
+	pointer-events: none;
+	user-select: none;
+}
+#close2{
+	font-size: 40px;
+	cursor: pointer;
+	margin-left: 95%;
+}
+#close2:hover
+{
+	color: #f00;
+}
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 90%;
+  height: 450px;
+  margin-left: 5%;
+  padding-top: 10px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Hide the images by default */
+.mySlides {
+  
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  color: #34EE91;
+  background-color: rgba(0,0,0,0.3);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: #34EE91;
+  text-decoration: none;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot, .dot2, .dot3, .dot4 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #34EE91;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 5000000s;
+}
+
+
+@keyframes fade {
+  from {opacity: 1}
+  to {opacity: 1}
+}
+
+
